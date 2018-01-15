@@ -1,0 +1,23 @@
+.cardview{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin:5px;    
+    border: 1px solid black;
+    flex: 0 40px;    
+}
+
+.card > .title{
+    background-color: lightblue;  
+    color: white;
+    border: 1px solid black;  
+    margin:1px;
+}
+
+.card > .content{
+    background-color: white;  
+    border: 1px solid black; 
+    margin:1px; 
+} 
