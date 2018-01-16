@@ -8,9 +8,9 @@ export class CardView extends React.Component{
     }
     
     componentDidMount(){
-        fetch('http://localhost:8080/people')
+        fetch(this.props.FetchUrl)
         .then(function(response){return response.json()})
-        .then(function(json){            
+        .then(json => {            
             this.setState({people:json.people})
         })
     }
@@ -19,7 +19,7 @@ export class CardView extends React.Component{
         return (
             <div className="cardview">
                 {
-                    this.state.people.map(p => <Card Title={p.name} Content={p.job} />)
+                    this.state.people.map( (p,i) => <Card key={i} Title={p.name} Content={p.job} />)
                 }
             </div>
         )
