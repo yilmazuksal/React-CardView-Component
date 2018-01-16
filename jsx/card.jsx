@@ -8,7 +8,12 @@ export default function Card(props){
             <div className="content">
                 {
                     props.Columns.map(c => {
-                        return <p>{c.Label} {props.Data[c.DataField]}</p>
+                        return (
+                            <p>
+                                <span className="labelText">{c.Label}:&nbsp;</span>
+                                <span className="valueText">{props.Data[c.DataField]}</span>
+                            </p>
+                        )
                     })                                        
                 }
             </div>

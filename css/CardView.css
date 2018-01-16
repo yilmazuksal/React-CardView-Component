@@ -9,7 +9,8 @@
     flex: 0 40px;    
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    max-width: 5rem;
+    min-width: 160px;
+    width:160px;
 }
 
 .card > .title{
@@ -23,5 +24,14 @@
 
 .card > .content{
     background-color: white;   
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     margin:1px; 
 } 
+
+.card > .content  .labelText{
+    color:#0275d8;
+}
+
+.card > .content  .valueText{
+    color: black;
+}
